@@ -6,27 +6,58 @@
 ul li{
     list-style-type: none;
 }
+hr{
+    width: 80%;
+    margin: 30px auto 100px;
+    opacity: 0.35;
+}
 
 .navigation ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px 10%;
-    margin-bottom: 20px;
+    padding: 15px 10% 0;
 }
-
+.navigation {
+    align-items: center;
+}
 .cartAvatar{
     margin-left: 650px;
-    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 .avatar img{
-    border: 5px;
+    border: 3px solid;
+    border-radius: 50px;
+    border-color: hsl(26, 100%, 55%);
     height: 50px;
-    width: 50px; 
+    width: 50px;
+    margin-left: 60px; 
 }
 .cartIcon img{
-    padding-left: 50px;
-    size: 70px;
+    height: 40px;
+    width: 50px;
+}
+.cartIcon{
+    position: relative;
+    width: 30px;
+    height: 50px;
+    
+}
+.cartIcon p{
+    position: absolute;
+    font-size: 14px;
+    text-align: center;
+    top: -15px;
+    right: -30px;
+    width: 30px;
+    height: 20px;
+    padding: 2px 0;
+    border-radius: 10px;
+    background-color: hsl(26, 100%, 55%);
+    color: #fff;
 }
 .imageContent {
     display: flex;
@@ -48,7 +79,7 @@ ul li{
     border: 5px;
 }
 .productContent {
-    margin: 70px 0;
+    margin: 70px 30px;
 }
 .productContent h1{
     text-transform: uppercase;
@@ -59,7 +90,7 @@ ul li{
     margin-bottom: 20px;
 }
 .productContent h2{
-    font-size: 4rem;
+    font-size: 3.4rem;
     font-weight: 700;
     margin-bottom: 30px;
 }
@@ -77,6 +108,12 @@ ul li{
 .priceDiscount h3{
     font-size: 1.8rem;
     margin-right: 10px;
+}
+.productContent p{
+    font-size: 1rem;
+}
+.description p{
+    font-size: 1.1rem;
 }
 .discount {
     width: 50px;
