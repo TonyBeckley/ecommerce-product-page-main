@@ -68,19 +68,16 @@ hr{
     bottom: -270px;
     right: -200px;
     background-color: #fff;
-    border: 1px solid;
     border-radius: 10px;
     padding: 20px 0 20px;
-}
-.cartDescription p{
-    
+    box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2);
 }
 .sepHR{
     border: 1px solid;
     border-color: hsl(220, 14%, 75%);
     opacity: 0.4;
     margin: 20px 0;
-    width: 400px;
+    width: 100%;
 }
 .itemsCart{
     display: flex;
@@ -110,7 +107,12 @@ hr{
     height: 50px;
     margin: 20px 30px;
 }
-
+.cartDescription button {
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(26, 100%, 55%);
+    color: #fff;
+}
 
 .imageContent {
     display: flex;
