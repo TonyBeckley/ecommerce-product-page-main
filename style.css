@@ -60,17 +60,21 @@ hr{
     color: #fff;
 }
 
-
-.cartDescription {
+.cartDescription{
+    display: block;
     z-index: 50;
     position: absolute;
     width: 380px;
-    bottom: -270px;
+    bottom: 3000%;
     right: -200px;
     background-color: #fff;
     border-radius: 10px;
     padding: 20px 0 20px;
     box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2);
+    transition: 0.7s ease-in-out;
+}
+.cartDescription.active {
+    bottom: -270px;
 }
 .sepHR{
     border: 1px solid;
