@@ -12,21 +12,44 @@ hr{
     opacity: 0.3;
 }
 
-.navigation ul{
+.navPrimary {
     display: flex;
-    justify-content: space-around;
+    width: 90%;
+    margin: 30px 10% 0;
     align-items: center;
-    padding: 15px 10% 0;
 }
-.navigation {
-    align-items: center;
+.navMenu {
+    display: inline-block;
+}
+.navMenu ul{
+    display: flex;
+    margin-left: 20px;
+}
+.navMenu ul li {
+    margin-left: 50px;
+}
+.hamburger{
+    display: none;
+}
+.bar{
+    display: block;
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    background-color: hsl(0, 0%, 0%);
+    -webkit-transition : all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.webFlow img{
+    display: inline-block;
 }
 .cartAvatar{
-    margin-left: 650px;
+    margin-left: 40%;
+}
+.cartAvatar ul{
     display: flex;
     align-items: center;
-    margin-bottom: 0;
-    padding-bottom: 0;
+    
 }
 .avatar img{
     border: 3px solid;
@@ -34,7 +57,7 @@ hr{
     border-color: hsl(26, 100%, 55%);
     height: 50px;
     width: 50px;
-    margin-left: 60px; 
+    margin-left: 50px; 
 }
 .cartIcon img{
     height: 40px;
@@ -42,16 +65,13 @@ hr{
 }
 .cartIcon{
     position: relative;
-    width: 30px;
-    height: 50px;
-    
 }
 .cartCounter p{
     position: absolute;
     font-size: 14px;
     text-align: center;
-    top: -15px;
-    right: -30px;
+    top: -20px;
+    right: -10px;
     width: 30px;
     height: 20px;
     padding: 2px 0;
@@ -137,6 +157,13 @@ hr{
     border-radius: 10px;
     border: 5px;
 }
+.thumbnail img:hover {
+    border: 2px solid;
+    width: 96px;
+    border-radius: 7px;
+    border-color: hsl(26, 100%, 55%);
+    opacity: 0.5;
+}
 .productContent {
     margin: 70px 30px;
 }
@@ -194,7 +221,7 @@ hr{
 .productCounter strong{
     margin: 0 30px;
 }
-.addCartButton{
+.addCartButton button{
     display: flex;
     margin-left: 20px;
     width: 250px;
@@ -203,6 +230,7 @@ hr{
     justify-content: center;
     align-items: center;
     border-radius: 7px;
+    border: none;
 }
 .addCartButton img{
     width: 15px;
@@ -225,4 +253,50 @@ hr{
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        text-align: center;
+    }
+    nav{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg); 
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg); 
+    }
+    .navigation li:nth-child(n+3) {
+        display: flex;
+        flex-direction: column;
+    }
+    .thumbnailList{
+        display: none;
+    }
+    .imageContent{
+        flex-direction: column;
+    }
+    .cartAvatar{
+        margin-left: 100px;
+    }
+    .avatar img {
+        width: 30px;
+        height: 30px;
+        margin-left: 30px;
+    }
+    .cartIcon img {
+        width: 30px;
+        height: 30px;
+    }
 }

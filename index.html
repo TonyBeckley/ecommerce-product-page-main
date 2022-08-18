@@ -17,46 +17,55 @@
   <header>
     <nav>
       <div class="navigation">
-        <ul>
-          <li><img src="./images/logo.svg" alt="" srcset=""></li>
-          <li>Collections</li>
-          <li>Men</li>
-          <li>Women</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>
-            <div class="cartAvatar">
-              <ul>
-                <li class="cartIcon">
-                  <img src="./images/add-to-cart-3046.svg" alt="cart">
-                  <div class="cartCounter">
-                    <p>00</p>
-                  </div>
-                  <div class="cartDescription">
-                    <p style="font-weight: 700; padding-left: 20px;">Cart</p>
-                    <div class="sepHR"></div>
-                    <div class="itemsCart">
-                      <div class="checkoutThumbnail">
-                        <img src="./images/image-product-1-thumbnail.jpg" alt="cart thumbnail">
-                      </div>
-                      <ul>
-                        <li>Fall Limited Edition Sneakers</li>
-                        <li>$125.00 x 3 <strong>$375.00</strong></li>
-                      </ul>
-                      <div class="deleteIcon">
-                        <img src="./images/icon-delete.svg" alt="delete">
-                      </div>
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div> 
+        <div class="navPrimary">
+          <div class="webLogo">
+            <img src="./images/logo.svg" alt="logo">
+          </div>
+          <div class="navMenu">
+            <ul>
+              <li>Collections</li>
+              <li>Men</li>
+              <li>Women</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="cartAvatar">
+            <ul>
+              <li class="cartIcon">
+                <img src="./images/add-to-cart-3046.svg" alt="cart">
+                <div class="cartCounter">
+                  <p>00</p>
+                </div>
+                <div class="cartDescription">
+                  <p style="font-weight: 700; padding-left: 20px;">Cart</p>
+                  <div class="sepHR"></div>
+                  <div class="itemsCart">
+                    <div class="checkoutThumbnail">
+                      <img src="./images/image-product-1-thumbnail.jpg" alt="cart thumbnail">
                     </div>
-                    <button>Checkout</button>
+                    <ul>
+                      <li>Fall Limited Edition Sneakers</li>
+                      <li>$125.00 x 3 <strong>$375.00</strong></li>
+                    </ul>
+                    <div class="deleteIcon">
+                      <img src="./images/icon-delete.svg" alt="delete">
+                    </div>
                   </div>
-                </li>
-                <li class="avatar">
-                  <img src="./images/image-avatar.png" alt="avatar image">
-                </li>
-              </ul>
-            </div>
-          </li>
-        </ul>
+                  <button>Checkout</button>
+                </div>
+              </li>
+              <li class="avatar">
+                <img src="./images/image-avatar.png" alt="avatar image">
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
@@ -111,8 +120,10 @@
         </div>
     
         <div class="addCartButton">
-          <img src="./images/icon-cart.svg" alt="icon-cart">
-          <p>Add to cart</p>
+          <button>
+            <img src="./images/icon-cart.svg" alt="icon-cart">
+            <p>Add to cart</p>
+          </button>
         </div>
       </div>
     </div>
