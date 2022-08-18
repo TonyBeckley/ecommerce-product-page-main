@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Kumbh Sans', sans-serif;
 }
 ul li{
@@ -33,9 +34,9 @@ hr{
 }
 .bar{
     display: block;
-    width: 30px;
+    width: 20px;
     height: 5px;
-    margin: 5px;
+    margin: 3px;
     background-color: hsl(0, 0%, 0%);
     -webkit-transition : all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -241,7 +242,6 @@ hr{
     width: 100px;
     color: #fff;
     margin-top: 30px;
-    
 }
 .attribution { 
     position: absolute;
@@ -255,17 +255,24 @@ hr{
     color: hsl(228, 45%, 44%); 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 375px) {
     body {
         text-align: center;
+        box-sizing: border-box;
+        max-width: 100%;
+        margin: 0;
     }
     nav{
         width: 100%;
         margin: 0;
         padding: 0;
     }
+    hr{
+        margin: 10px 0 0;
+    }
     .hamburger{
-        display: block;
+        display: inline-block;
+        margin-right: 10px;
     }
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
@@ -277,26 +284,115 @@ hr{
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg); 
     }
-    .navigation li:nth-child(n+3) {
-        display: flex;
-        flex-direction: column;
+    .navPrimary{
+        width: 100%;
+        margin: 10px 10px 0;
+    }
+    .navMenu {
+        position: fixed;
+        left: -120%;
+    }
+    .imageDisplay{
+        width: 100%;
+
     }
     .thumbnailList{
         display: none;
     }
-    .imageContent{
-        flex-direction: column;
-    }
     .cartAvatar{
-        margin-left: 100px;
+        margin-left: 28%;
+    }
+    .cartCounter{
+        display: none;
     }
     .avatar img {
         width: 30px;
         height: 30px;
-        margin-left: 30px;
+        margin-left: 20px;
     }
     .cartIcon img {
         width: 30px;
         height: 30px;
+    }
+    .imageContent{
+        flex-direction: column;
+        margin: 0;
+    }
+    .imageDisplay img{
+        object-fit: cover;
+        width: 100%;
+        height: 300px;
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+    .productContent{
+        margin: 20px 20px;
+        text-align: left;
+    }
+    .productContent h1{
+        font-size: 0.8rem;
+    }
+    .productContent h2{
+        width: 100%;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    .productContent p{
+        text-align: left;
+        width: 100%;
+        font-size: 0.95rem;
+    }
+    .description p{
+        margin-bottom: 20px;
+    }
+    .amount{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .oldPrice{
+        padding-bottom: 0;
+        margin-bottom: 10px;
+        margin-left: auto;
+    }
+    .cartAddition{
+        flex-direction: column;
+    }
+    .productCounter {
+        margin: 20px auto;
+        width: 80%;
+        align-items: center;
+    }
+    .productCounter strong{
+        margin: 0 34%;
+    }
+    .addCartButton {
+        margin: 30px auto;
+    }
+    .addCartButton button{
+        margin-left: 0;
+    }
+    .addCartButton img{
+        width: 15px;
+        height: 15px;
+        margin-right: 15px;
+    }
+    .addCartButton p{
+        width: 100px;
+        color: #fff;
+        margin-top: 30px;
+    }
+    .attribution { 
+        position: fixed;
+        width: 50%;
+        font-size: 11px; 
+        text-align: center; 
+        bottom: 10px;
+        margin-left: 10px;
+        left: 20%;
+        transform: translateX(-20%);
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
     }
 }
