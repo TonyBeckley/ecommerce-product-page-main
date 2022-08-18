@@ -123,6 +123,9 @@ hr{
     width: 100%;
     padding: 0 10px;
 }
+.itemsCart ul li{
+    text-align: left;
+}
 .deleteIcon img{
     height: 20px;
     width: 18px;
@@ -131,14 +134,11 @@ hr{
     width: 85%;
     height: 50px;
     margin: 20px 30px;
-}
-.cartDescription button {
     border-radius: 10px;
     border: none;
     background-color: hsl(26, 100%, 55%);
     color: #fff;
 }
-
 .imageContent {
     display: flex;
     margin: 0 15%;
@@ -271,12 +271,11 @@ hr{
         margin: 10px 0 0;
     }
     .hamburger{
-        display: inline-block;
+        display: block;
         margin-right: 10px;
     }
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
-
     }
     .hamburger.active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg); 
@@ -291,10 +290,19 @@ hr{
     .navMenu {
         position: fixed;
         left: -120%;
+        flex-direction: column;
+        gap: 0;
+        background-color: #fff;
+        height: 100%;
+        width: 40%;
+        text-align : center;
+        transition: 0.3s;
+    }
+    .navMenu.active{
+        left: 70px;
     }
     .imageDisplay{
         width: 100%;
-
     }
     .thumbnailList{
         display: none;
@@ -304,6 +312,13 @@ hr{
     }
     .cartCounter{
         display: none;
+    }
+    .cartDescription{
+        right: -55px;
+        
+    }
+    .cartDescription.active{
+        bottom: -250px;
     }
     .avatar img {
         width: 30px;
@@ -389,8 +404,8 @@ hr{
         text-align: center; 
         bottom: 10px;
         margin-left: 10px;
-        left: 20%;
-        transform: translateX(-20%);
+        left: 30%;
+        transform: translateX(-30%);
     }
     .attribution a { 
         color: hsl(228, 45%, 44%); 
