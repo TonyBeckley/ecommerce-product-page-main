@@ -28,6 +28,7 @@ hr{
 }
 .navMenu ul li {
     margin-left: 50px;
+    text-decoration: none;
 }
 .hamburger{
     display: none;
@@ -273,6 +274,7 @@ hr{
     .hamburger{
         display: block;
         margin-right: 10px;
+        z-index: 10;
     }
     .hamburger.active .bar:nth-child(2){
         opacity: 0;
@@ -293,13 +295,19 @@ hr{
         flex-direction: column;
         gap: 0;
         background-color: #fff;
-        height: 100%;
-        width: 40%;
+        height: 200%;
+        width: 70%;
         text-align : center;
         transition: 0.3s;
     }
+    .navMenu ul{
+        flex-direction: column;
+        gap: 0;
+        z-index: 30;
+
+    }
     .navMenu.active{
-        left: 70px;
+        left: 0;
     }
     .imageDisplay{
         width: 100%;

@@ -1,6 +1,6 @@
 const cartIcon = document.querySelector(".cartIcon");
 const cartDescription = document.querySelector(".cartDescription");
-const hamburger = document.querySelector("hamburger");
+const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".navMenu");
 
 cartIcon.addEventListener("click", () => {
